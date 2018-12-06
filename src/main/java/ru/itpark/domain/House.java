@@ -21,6 +21,6 @@ public class House {
         return district;
     }
 
-    
+
 }
 
