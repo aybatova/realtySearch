@@ -21,6 +21,14 @@ public class House {
         return district;
     }
 
-
+    @Override
+    public String toString() {
+        return "House{" +
+                "id=" + id +
+                ", area=" + area +
+                ", price=" + price +
+                ", district='" + district + '\'' +
+                '}';
+    }
 }
 
