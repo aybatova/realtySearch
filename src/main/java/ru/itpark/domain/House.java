@@ -1,6 +1,6 @@
 package ru.itpark.domain;
 
-public class House {
+public abstract class House {
     private int id;
     private int area;
     private int price;
