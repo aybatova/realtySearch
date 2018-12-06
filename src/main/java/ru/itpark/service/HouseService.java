@@ -49,10 +49,10 @@ public class HouseService {
         List<House> result = new ArrayList<>();
 
         for (House house : repository.getAll()) {
-            int housePrise = house.getPrice();
+            int housePrice = house.getPrice();
 
 
-            if (housePrise >= minPrice && housePrise<= maxPrice) {
+            if (housePrice >= minPrice && housePrice<= maxPrice) {
                 result.add(house);
             }
         }
