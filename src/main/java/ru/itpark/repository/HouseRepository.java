@@ -1,6 +1,5 @@
 package ru.itpark.repository;
 
-import ru.itpark.comparator.AscPriceComparator;
 import ru.itpark.domain.House;
 
 import java.util.ArrayList;
