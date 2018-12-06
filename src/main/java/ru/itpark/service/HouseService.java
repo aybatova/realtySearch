@@ -29,6 +29,7 @@ public class HouseService {
         result.sort(comparator);
         return result;
     }
+
     public List<House> findByDistricts(List<String> districts) {
         List<House> result = new ArrayList<>();
 
@@ -43,6 +44,23 @@ public class HouseService {
         result.sort(new AscPriceComparator());
         return result;
     }
+
+    public List<House> findByPrice(int minPrice, int maxPrice) {
+        List<House> result = new ArrayList<>();
+
+        for (House house : repository.getAll()) {
+            int housePrise = house.getPrice();
+
+
+            if (housePrise >= minPrice && housePrise<= maxPrice) {
+                result.add(house);
+            }
+        }
+
+        result.sort(new AscPriceComparator());
+        return result;
     }
+
+}
 
 

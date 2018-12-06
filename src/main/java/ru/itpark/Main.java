@@ -29,4 +29,7 @@ public class Main {
         districts.add("Сармановский");
         System.out.println(service.findByDistricts(districts));
 
+        System.out.println(service.findByPrice(140,300));
+
+
     }}
